@@ -315,7 +315,9 @@ var GoogleSpreadsheet = function( ss_key, auth_id, options ){
     data_xml += '</entry>';
     self.makeFeedRequest( ["list", ss_key, worksheet_id], 'POST', data_xml, function(err, data, new_xml) {
       if (err) return cb(err);
+      if (!new_xml || !new_xml.match) return cb({ code: "invalid_new_xml", data: data, new_xml: new_xml });
       var entries_xml = new_xml.match(/<entry[^>]*>([\s\S]*?)<\/entry>/g);
+      if (!entries_xml.length) return cb({ code: "no_entries_xml", data: data, new_xml: new_xml});
       var row = new SpreadsheetRow(self, data, entries_xml[0]);
       cb(null, row);
     });
