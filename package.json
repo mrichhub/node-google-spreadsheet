@@ -1,7 +1,6 @@
 {
   "author": "Mike Richards <mike.richards@fanbeat.com> (https://fanbeat.com)",
   "name": "@ingameapp/google-spreadsheet-fork",
-  "private": true,
   "description": "Google Spreadsheets Data API -- simple interface to read/write rows/cells, manage sheets",
   "version": "1.0.1",
   "license": "Unlicense",
