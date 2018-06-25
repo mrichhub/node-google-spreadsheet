@@ -1,23 +1,15 @@
 {
-  "author": "Theo Ephraim <theozero@gmail.com> (http://theoephraim.com)",
-  "name": "google-spreadsheet",
+  "author": "Mike Richards <mike.richards@fanbeat.com> (https://fanbeat.com)",
+  "name": "@ingameapp/google-spreadsheet-fork",
+  "private": true,
   "description": "Google Spreadsheets Data API -- simple interface to read/write rows/cells, manage sheets",
-  "version": "2.0.4",
+  "version": "1.0.1",
   "license": "Unlicense",
-  "keywords": [
-    "google spreadsheets",
-    "google",
-    "spreadsheet",
-    "spreadsheets",
-    "sheets",
-    "gdata",
-    "api",
-    "google sheets"
-  ],
+  "keywords": [],
   "homepage": "https://github.com/theoephraim/node-google-spreadsheet",
   "repository": {
     "type": "git",
-    "url": "git://github.com/theoephraim/node-google-spreadsheet.git"
+    "url": "git://github.com/mrichhub/node-google-spreadsheet.git"
   },
   "main": "index.js",
   "engines": {
